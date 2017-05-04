@@ -20,7 +20,7 @@ public class MainWindow extends JFrame{
     //Создаем пару панелей
         setLayout(null);
         JPanel TextFieldsPane = new JPanel();
-        TextFieldsPane.setBounds(0,0,800,400);
+        TextFieldsPane.setBounds(0,0,700,300);
         TextFieldsPane.setBackground(new Color(100, 200, 50));
         JPanel ButtonPane = new JPanel();
         ButtonPane.setBounds(0,700,800,100);
@@ -33,18 +33,21 @@ public class MainWindow extends JFrame{
         JButton jbuttonAnalyze = new JButton("Waiting for Meaning");
         jbuttonAnalyze.setBackground(new Color(50, 100, 200));
         jbuttonAnalyze.setBounds(350, 725,100,50);
-        ButtonPane.add(jbuttonAnalyze);
+        add(jbuttonAnalyze);
 
     //Добавляем текстовые поля на верхню панель
-        TextFieldsPane.setLayout(new FlowLayout());
+        TextFieldsPane.setLayout(new GridLayout(10,1));
 
         //реализовать как массив, чтобы легче писать в базу и искать?
-        JTextField Name = new JTextField("Ваше Имя: ");
+        JTextField Name = new JTextField("Ваше Имя: ", 50);
         TextFieldsPane.add(Name);
-        JTextField Age = new JTextField("Возраст: ");
+
+        JTextField Age = new JTextField("Возраст: ", 20);
         TextFieldsPane.add(Age);
-        JTextField Occupation = new JTextField("Сфера деятельности: ");
+
+        JTextField Occupation = new JTextField("Сфера деятельности: ", 100);
         TextFieldsPane.add(Occupation);
+
         String[] MartialStatusCombo = {"Женат/Замужем", "Разведен(а)", "В разводе", "Вдовец/Вдова"};
         JComboBox<String> jcombo1 = new JComboBox<String>(MartialStatusCombo);
         TextFieldsPane.add(jcombo1);
