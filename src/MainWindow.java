@@ -22,6 +22,7 @@ public class MainWindow extends JFrame{
         JPanel TextFieldsPane = new JPanel();
         TextFieldsPane.setBounds(0,0,700,300);
         TextFieldsPane.setBackground(new Color(100, 200, 50));
+
         JPanel ButtonPane = new JPanel();
         ButtonPane.setBounds(0,700,800,100);
         ButtonPane.setBackground(new Color(100, 100, 70));
@@ -29,7 +30,7 @@ public class MainWindow extends JFrame{
         add(ButtonPane);
 
     //Добавляем кнопку на нижнюю панель
-        //ButtonPane.setLayout(null);
+        ButtonPane.setLayout(null);
         JButton jbuttonAnalyze = new JButton("Waiting for Meaning");
         jbuttonAnalyze.setBackground(new Color(50, 100, 200));
         jbuttonAnalyze.setBounds(350, 725,100,50);
