@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox alignment="center" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="Controller">
+    <VBox>
+        <TextField fx:id="nameField" promptText="Имя"/>
+        <TextField fx:id="ageField" promptText="Возраст"/>
+        <TextField fx:id="emailField" promptText="Электронная почта" prefHeight="50.0"/>
+        <TextField fx:id="familyStatusField" promptText="Семейное положение, дети"/>
+        <TextArea fx:id="eventsArea" promptText="Значимые события перед сновидением"/>
+        <TextArea fx:id="thoughtsArea" promptText="Мысли по поводу сна - на что это похоже"/>
+        <TextArea fx:id="feelingsArea" promptText="Чувства, вызванные сном"/>
+        <TextArea fx:id="dreamArea" promptText="Содержание сна"/>
+        <HBox>
+            <Button HBox.hgrow="ALWAYS" prefWidth="500" text="Истолковать"/>
+        </HBox>
+    </VBox>
+</HBox>
