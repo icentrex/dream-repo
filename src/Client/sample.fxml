@@ -8,7 +8,7 @@
 
 
 <HBox alignment="center" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="Controller">
+      fx:controller="Client.Controller">
     <VBox>
         <TextField fx:id="nameField" promptText="Имя"/>
         <TextField fx:id="ageField" promptText="Возраст"/>
@@ -19,7 +19,7 @@
         <TextArea fx:id="feelingsArea" promptText="Чувства, вызванные сном"/>
         <TextArea fx:id="dreamArea" promptText="Содержание сна"/>
         <HBox>
-            <Button HBox.hgrow="ALWAYS" prefWidth="500" text="Истолковать"/>
+            <Button onAction="#saveDream" HBox.hgrow="ALWAYS" prefWidth="500" text="Истолковать"/>
         </HBox>
     </VBox>
 </HBox>
